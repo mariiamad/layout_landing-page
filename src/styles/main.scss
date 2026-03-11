@@ -1,3 +1,87 @@
+html {
+  font-family: 'Space Grotesk', sans-serif;
+  color: #292929;
+  font-size: 16px;
+  line-height: 140%;
+}
+
 body {
   margin: 0;
+}
+
+.header {
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 24px 20px 40px;
+  background-image: url(../images/image.png);
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__icons {
+  display: flex;
+  gap: 24px;
+}
+
+.header__title {
+  margin: 0;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 24px 20px 40px;
+  background-color: #E5E6E8;
+
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu:target {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.menu__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  display: block;
+  height: 24px;
+  width: 24px;
+}
+
+.icon--phone {
+  background-image: url(../images/icons/icon-phone.svg);
+}
+
+.icon--menu {
+  background-image: url(../images/icons/icon-menu.svg);
+}
+
+.icon--close {
+  background-image: url(../images/icons/icon-close.svg);
 }
