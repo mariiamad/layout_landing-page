@@ -6,7 +6,6 @@
     display: block;
 
     @include on-tablet {
-      max-width: 600px;
       margin-inline: auto;
     }
   }

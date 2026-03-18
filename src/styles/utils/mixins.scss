@@ -13,11 +13,11 @@
 @mixin content-padding-inline {
   padding-inline: 20px;
 
-  @include on-tablet() {
+  @include on-tablet {
     padding-inline: 72px;
   }
 
-  @include on-desktop() {
+  @include on-desktop {
     max-width: 1020px;
     padding-inline: 120px;
     margin-inline: auto;
@@ -32,5 +32,21 @@
   transition: #{$property} $effectDuration;
   &:hover {
     #{$property}: $toValue;
+  }
+}
+
+@mixin page-grid {
+  --columns: 2;
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat(var(--columns), 1fr);
+
+  @include on-tablet {
+    --columns: 6;
+    column-gap: 24px;
+  }
+
+  @include on-desktop {
+    --columns: 12;
   }
 }

@@ -1,17 +1,18 @@
 .recommended {
   &__products {
-    display: grid;
-    grid-template-columns: 1fr;
+    @include page-grid;
     row-gap: 40px;
+  }
+
+  &__product {
+    grid-column: 1 / -1;
 
     @include on-tablet {
-      justify-items: center;
+      grid-column: 1 / -1;
     }
 
     @include on-desktop {
-      grid-template-columns: repeat(3, 1fr);
-      column-gap: 24px;
-      justify-content: stretch;
+      grid-column: span 4;
     }
   }
 }
