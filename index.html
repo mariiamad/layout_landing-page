@@ -231,17 +231,83 @@
             </div>
           </section>
 
-          <section class="cart" id="cart">
+          <section class="contact-us" id="cart">
+
+            <!-- Заголовок -->
             <h2 class="
-              cart__title
+              contact-us__title
               section-title
-              <!-- section-title--small--margin -->
             ">
               Contact us
             </h2>
-          </section>
 
-          <button class="button button--large">Send</button>
+            <!-- Контейнер для двох колонок -->
+            <div class="contact-us__wrapper">
+
+              <!-- Форма -->
+              <form class="contact-us__content">
+                <div class="contact-us__row">
+                  <input
+                    type="text"
+                    name="name"
+                    class="contact-us__text"
+                    placeholder="Name"
+                    required
+                  >
+                </div>
+
+                <div class="contact-us__row">
+                  <input
+                    type="email"
+                    name="email"
+                    class="contact-us__text"
+                    placeholder="Email"
+                    required
+                  >
+                </div>
+
+                <div class="contact-us__row">
+                  <textarea
+                    name="message"
+                    class="contact-us__text contact-us__text--textarea"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="button button--large">
+                  Send
+                </button>
+              </form>
+
+              <!-- Контактна інформація -->
+              <div class="contact-us__infos">
+                <div class="contact-us__info">
+                  <h3 class="contact-us__item">Phone</h3>
+
+                  <p class="contact-us__item contact-us__item--bold">+1 234 5555-55-55</p>
+                </div>
+
+                <div class="contact-us__info">
+                  <h3 class="contact-us__item">Email</h3>
+
+                  <p class="contact-us__item contact-us__item--bold">hello@nothing.com</p>
+                </div>
+
+                <div class="contact-us__info">
+                  <h3 class="contact-us__item">Address</h3>
+
+                  <p class="contact-us__item contact-us__item--bold">
+                    400 first ave.
+                    <br>
+                    suite 700
+                    <br>
+                    Minneapolis, MN 55401
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </main>

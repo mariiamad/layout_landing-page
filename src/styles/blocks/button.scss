@@ -20,15 +20,18 @@
   }
 
   &--large {
+    grid-column: 1 / -1;
+    margin-top: 16px;
+
     @include on-desktop {
       grid-column: span 5;
     }
   }
 
   &:hover {
-    background-color: #F8F8FA;
+    background-color: #f8f8fa;
     color: $main-text-color;
-    border: 2px solid #F0F1F4;
+    border: 2px solid #f0f1f4;
   }
 
   &:active {
@@ -51,7 +54,7 @@
     margin-bottom: 120px;
   }
 
-   @include on-desktop {
+  @include on-desktop {
     height: 460px;
   }
 }
