@@ -6,16 +6,12 @@
     padding-top: 64px;
     padding-bottom: 96px;
 
-    /* @include content-padding-inline; */
-
     @include on-tablet {
       padding-block: 120px;
-
-      /* row-gap: 120px; */
     }
   }
 
   &__content > * {
-    grid-column: 1 / -1; // всі секції на всю ширину
+    grid-column: 1 / -1;
   }
 }

@@ -5,7 +5,6 @@
     }
   }
 
-  /* Форма */
   &__content {
     grid-column: 1 / -1;
     margin-bottom: 48px;
@@ -21,27 +20,22 @@
 
   &__row {
     margin-bottom: 16px;
-    grid-column: 1 / -1;
-
-    @include on-desktop {
-      grid-column: span 5;
-    }
   }
 
   &__text {
     width: 100%;
     display: block;
     box-sizing: border-box;
-    border-radius: 8px;
-    border: 1px solid #f8f8fa;
-    background-color: #f8f8fa;
+    border-radius: $border-radius;
+    border: $border-small solid transparent;
+    background-color: $row-background-color;
     height: 48px;
 
     padding: 14px 16px;
     font-family: 'Space Mono', monospace;
     font-weight: 400;
     font-size: 14px;
-    color: #7e7e83;
+    color: $row-color;
 
     &--textarea {
       height: 148px;
@@ -52,16 +46,15 @@
 
     &:hover {
       color: $main-text-color;
-      border: 1px solid #d5d7de;
+      border: $border-small solid $row-hover-border;
     }
 
     &:focus-visible {
       outline: none;
-      border: 1px solid $main-text-color;
+      border: $border-small solid $main-text-color;
     }
   }
 
-  /* Контактна інформація */
   &__infos {
     grid-column: 1 / -1;
 
@@ -75,11 +68,11 @@
     font-family: 'Space Mono', monospace;
     font-weight: 400;
     font-size: 14px;
-    color: #7e7e83;
+    color: $row-color;
 
     &--bold {
       font-size: 16px;
-      color: #191919;
+      color: $row-color-bold;
       margin-top: 4px;
       margin-bottom: 24px;
     }
