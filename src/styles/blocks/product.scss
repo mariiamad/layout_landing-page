@@ -1,5 +1,9 @@
 .product {
   padding: 0;
+  border-radius: $border-radius-smoll;
+  overflow: hidden;
+
+  @include card-hover;
 
   &__photo {
     width: 100%;

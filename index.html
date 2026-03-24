@@ -6,7 +6,13 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Landing Page</title>
+    <title>Nothing</title>
+    <link
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+      href="./src/images/favocinN.png"
+    >
     <link
       rel="stylesheet"
       href="./src/styles/main.scss"
@@ -32,12 +38,12 @@
       rel="stylesheet"
     >
   </head>
-  <body class="page__body">
+  <body class="page__body" id="top">
     <header class="header">
       <div class="container">
         <div class="header__content">
           <div class="top-bar">
-            <a href="#" class="top-bar__logo-link">
+            <a href="#top" class="top-bar__logo-link">
               <img
                 src="./src/images/logo-2x.png"
                 alt="Nothing logo"
@@ -65,7 +71,7 @@
     <aside class="menu page__menu" id="menu">
       <div class="container">
         <div class="top-bar menu__top">
-          <a href="#" class="top-bar__logo-link">
+          <a href="#top" class="top-bar__logo-link">
             <img
               src="./src/images/logo-2x.png"
               alt="Nothing logo"
@@ -95,6 +101,7 @@
               </li>
             </ul>
           </nav>
+          
           <a  href="tel:+1 234 5555-55-55" class="menu__phone-number">
             +1 234 5555-55-55
           </a>
@@ -308,7 +315,7 @@
                   ></textarea>
                 </div>
 
-                <button type="submit" class="button button--large">
+                <button type="reset" class="button button--large">
                   Send
                 </button>
               </form>

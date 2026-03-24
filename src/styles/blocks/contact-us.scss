@@ -70,6 +70,8 @@
     font-size: 14px;
     color: $row-color;
 
+    @include hover(color, $row-color-dark);
+
     &--bold {
       font-size: 16px;
       color: $row-color-bold;
