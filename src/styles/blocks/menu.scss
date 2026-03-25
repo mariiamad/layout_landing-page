@@ -1,9 +1,14 @@
 .menu {
+  overflow: auto;
   box-sizing: border-box;
-  height: 100vh;
+  height: 100dvh;
   background-color: $menu-background-color;
 
   &__top {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: $menu-background-color;
     margin-bottom: 32px;
 
     @include on-tablet {

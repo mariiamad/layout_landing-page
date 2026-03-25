@@ -97,11 +97,11 @@
               </li>
 
               <li class="nav__item">
-                <a  class="nav__link" href="#cart">Cart(0)</a>
+                <a  class="nav__link" href="#сart">Cart(0)</a>
               </li>
             </ul>
           </nav>
-          
+
           <a  href="tel:+1 234 5555-55-55" class="menu__phone-number">
             +1 234 5555-55-55
           </a>
@@ -242,7 +242,7 @@
             </div>
           </section>
 
-          <button class="button">View all</button>
+          <a href="#top" class="button">View all</a>
         </div>
       </div>
 
@@ -285,7 +285,10 @@
             </h2>
 
             <div class="contact-us__wrapper">
-              <form class="contact-us__content">
+              <form
+                onsubmit="this.reset(); return false;"
+                class="contact-us__content"
+              >
                 <div class="contact-us__row">
                   <input
                     type="text"
@@ -324,25 +327,37 @@
                 <div class="contact-us__info">
                   <h3 class="contact-us__item">Phone</h3>
 
-                  <p class="contact-us__item contact-us__item--bold">+1 234 5555-55-55</p>
+                  <a
+                    href="tel:+12345555555"
+                    class="contact-us__item contact-us__item--bold"
+                  >
+                    +1 234 5555-55-55
+                  </a>
                 </div>
 
                 <div class="contact-us__info">
                   <h3 class="contact-us__item">Email</h3>
 
-                  <p class="contact-us__item contact-us__item--bold">hello@nothing.com</p>
+                  <a
+                    href="mailto:hello@nothing.com"
+                    class="contact-us__item contact-us__item--bold"
+                  >
+                    hello@nothing.com
+                  </a>
                 </div>
 
                 <div class="contact-us__info">
                   <h3 class="contact-us__item">Address</h3>
 
-                  <p class="contact-us__item contact-us__item--bold">
-                    400 first ave.
-                    <br>
-                    suite 700
-                    <br>
+                  <a
+                    href="https://www.google.com/maps?q=400+first+ave+Minneapolis+MN+55401"
+                    target="_blank"
+                    class="contact-us__item contact-us__item--bold"
+                  >
+                    400 first ave.<br>
+                    suite 700<br>
                     Minneapolis, MN 55401
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>

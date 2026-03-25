@@ -55,6 +55,13 @@
     }
   }
 
+  input:-webkit-autofill,
+  textarea:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px $row-background-color inset;
+    -webkit-text-fill-color: $row-color;
+    transition: background-color 5000s ease-in-out;
+  }
+
   &__infos {
     grid-column: 1 / -1;
 
@@ -63,11 +70,16 @@
     }
   }
 
+  &__info {
+    margin-bottom: 24px;
+  }
+
   &__item {
     margin: 0;
     font-family: 'Space Mono', monospace;
     font-weight: 400;
     font-size: 14px;
+    text-decoration: none;
     color: $row-color;
 
     @include hover(color, $row-color-dark);
@@ -75,8 +87,13 @@
     &--bold {
       font-size: 16px;
       color: $row-color-bold;
-      margin-top: 4px;
-      margin-bottom: 24px;
     }
   }
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
 }

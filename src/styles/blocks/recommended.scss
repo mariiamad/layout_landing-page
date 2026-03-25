@@ -1,6 +1,7 @@
 .recommended {
   &__products {
     row-gap: 40px;
+    cursor: pointer;
 
     @include page-grid;
   }
